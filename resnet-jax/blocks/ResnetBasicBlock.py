@@ -2,7 +2,7 @@ import jax
 import flax.linen as nn
 
 
-class ResnetBlock(nn.Module):
+class ResnetBasicBlock(nn.Module):
     in_channels: int
     out_channels: int
     stride: int = 1
