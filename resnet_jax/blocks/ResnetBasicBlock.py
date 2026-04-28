@@ -8,7 +8,7 @@ class ResnetBasicBlock(nn.Module):
     stride: int = 1
     expansion: int = 1
 
-    def should_project(self):
+    def should_project(self) -> bool:
         return (
             self.stride != 1 or self.out_channels != self.in_channels * self.expansion
         )
